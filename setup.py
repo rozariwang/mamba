@@ -291,7 +291,7 @@ def get_wheel_url():
     cxx11_abi = str(torch._C._GLIBCXX_USE_CXX11_ABI).upper()
 
     # Determine wheel URL based on CUDA version, torch version, python version and OS
-    wheel_filename = f"{PACKAGE_NAME}-{mamba_ssm_version}+{cuda_or_hip}{gpu_compute_version}torch{torch_version}cxx11abi{cxx11_abi}-{python_version}-{python_version}-{platform_name}.whl"
+    wheel_filename = "mamba_ssm-2.2.2+cu122torch2.4cxx11abiTRUE-cp39-cp39-linux_x86_64.whl"
     wheel_url = "https://github.com/state-spaces/mamba/releases/download/v2.2.2/mamba_ssm-2.2.2+cu122torch2.4cxx11abiTRUE-cp39-cp39-linux_x86_64.whl"
     return wheel_url, wheel_filename
 
