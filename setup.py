@@ -310,6 +310,9 @@ class CachedWheelsCommand(_bdist_wheel):
 
         wheel_url, wheel_filename = get_wheel_url()
         print("Guessing wheel URL: ", wheel_url)
+        warnings.warn(
+        f"{wheel_url} is the wheel url"
+        )
         try:
             urllib.request.urlretrieve(wheel_url, wheel_filename)
 
